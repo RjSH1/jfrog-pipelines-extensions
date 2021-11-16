@@ -1,8 +1,8 @@
 resources:
-  - name: MyGitHub
+  - name: myGitHub
     type: GitRepo
     configuration:
-      path: declarativesystems/jfrog-pipelines-extensions    # <-- Change to your repository path
+      path: RjSH1/jfrog-pipelines-extensions    # <-- Change to your repository path
       gitProvider: github                                    # <-- Change to your GitHub integration
 
 pipelines: 
@@ -18,7 +18,7 @@ pipelines:
           integrations:
             - name: myArtifactory
           inputResources:
-            - name: MyGitHub
+            - name: myGitHub
           npmArgs: "--verbose"
       - name: npm publish
         type: declarativesystems/NpmPublish
