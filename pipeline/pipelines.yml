@@ -1,5 +1,5 @@
 resources:
-  - name: myGitHub
+  - name: MyGitHub
     type: GitRepo
     configuration:
       path: RjSH1/jfrog-pipelines-extensions    # <-- Change to your repository path
@@ -20,7 +20,7 @@ pipelines:
           inputResources:
             - name: myGitHub
           npmArgs: "--verbose"
-      - name: npm publish
+      - name: NpmPublish
         type: RjSH1/NpmPublish
         configuration:
           sourceArtifactory: myArtifactory
