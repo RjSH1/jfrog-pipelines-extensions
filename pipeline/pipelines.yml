@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: RjSH1/jfrog-pipelines-extensions    # <-- Change to your repository path
-      gitProvider: github                                    # <-- Change to your GitHub integration
+      gitProvider: myGithub                                    # <-- Change to your GitHub integration
 
 pipelines: 
   - name: npm
