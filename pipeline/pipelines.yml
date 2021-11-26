@@ -12,10 +12,10 @@ pipelines:
         type: NpmBuild
         #syntaxVersion: 1.0.0
         configuration:
-          sourceArtifactory: myArtifactory
+          #sourceArtifactory: myArtifactory
           sourceLocation: $res_MyGitHub_resourcePath
           repositoryName: npm
-          buildCommand: make # optional
+          #buildCommand: make # optional
           integrations:
             - name: myArtifactory
           inputResources:
@@ -24,7 +24,7 @@ pipelines:
       - name: NpmPublish
         type: NpmPublish
         configuration:
-          sourceArtifactory: myArtifactory
+          #sourceArtifactory: myArtifactory
           repositoryName: npm-local
           integrations:
             - name: myArtifactory
