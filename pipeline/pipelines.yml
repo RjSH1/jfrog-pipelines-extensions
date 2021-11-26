@@ -10,6 +10,7 @@ pipelines:
     steps:
       - name: buildStepName
         type: RjSH1/NpmBuild
+        syntaxVersion: 1.0.0
         configuration:
           sourceArtifactory: myArtifactory
           sourceLocation: $res_MyGitHub_resourcePath
