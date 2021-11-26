@@ -9,8 +9,8 @@ pipelines:
   - name: npm
     steps:
       - name: buildStepName
-        type: RjSH1/NpmBuild
-        syntaxVersion: 1.0.0
+        type: NpmBuild
+        #syntaxVersion: 1.0.0
         configuration:
           sourceArtifactory: myArtifactory
           sourceLocation: $res_MyGitHub_resourcePath
@@ -22,7 +22,7 @@ pipelines:
             - name: myGitHub
           npmArgs: "--verbose"
       - name: NpmPublish
-        type: RjSH1/NpmPublish
+        type: NpmPublish
         configuration:
           sourceArtifactory: myArtifactory
           repositoryName: npm-local
