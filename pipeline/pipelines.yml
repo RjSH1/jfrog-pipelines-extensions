@@ -19,7 +19,7 @@ pipelines:
           integrations:
             - name: myArtifactory
           inputResources:
-            - name: MyGitHub
+            - name: myGithub
           npmArgs: "--verbose"
       - name: NpmPublish
         type: NpmPublish
